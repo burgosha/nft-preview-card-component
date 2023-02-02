@@ -1,0 +1,116 @@
+:root {
+    /* Colors */
+    --primarySoftBlue: hsl(215, 51%, 70%);
+    --primaryCyan: hsl(178, 100%, 50%);
+    --mainBG: hsl(217, 54%, 11%);
+    --cardBG: hsl(216, 50%, 16%);
+    --lineColor: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+    /* Fonts */
+    --fontOutfit: "Outfit", sans-serif;
+}
+html {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+h1 a, h1 a:visited {
+    font-family: var(--fontOutfit);
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 28px;
+    color: var(--white);
+    text-decoration: none;
+}
+h1 a:hover {
+    color: var(--primaryCyan);
+}
+p {
+    font-family: var(--fontOutfit);
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+    color: var(--primarySoftBlue);
+}
+.card {
+    width: 350px;
+    height: 596px;
+    background-color: var(--cardBG);
+    border-radius: 15px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.nft-preview {
+    background-image: url(/images/image-equilibrium.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 302px;
+    height: 302px;
+    border-radius: 8px;
+}
+.nft-preview svg {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    padding: 127px;
+    border-radius: 8px;
+    background-color: rgba(0, 255, 248, 0.5);
+}
+.nft-preview svg:hover {
+    opacity: 1;
+}
+.card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.info-pub {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.nft-price {
+    color: var(--primaryCyan);
+    font-size: 16px;
+    font-weight: 600;
+}
+.nft-time {
+    font-size: 16px;
+    font-weight: 400;
+}
+.nft-price::before {
+    content: url(/images/icon-ethereum.svg);
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.nft-time::before {
+    content: url(/images/icon-clock.svg);
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.divider {
+    background-color: var(--lineColor);
+    height: 1px;
+    margin: 0;
+}
+.card-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.card-footer img {
+    height: 33px;
+    width: 33px;
+    border-radius: 50%;
+    border: 1px solid var(--white);
+    margin-right: 16px;
+}
