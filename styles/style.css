@@ -23,13 +23,16 @@ body {
     justify-content: center;
     min-height: 100vh;
 }
+h1 {
+    margin: 0rem;
+}
 h1 a, h1 a:visited {
     font-family: var(--fontOutfit);
     font-size: 22px;
     font-weight: 600;
-    line-height: 28px;
     color: var(--white);
     text-decoration: none;
+    margin: 0;
 }
 h1 a:hover {
     color: var(--primaryCyan);
@@ -40,6 +43,7 @@ p {
     font-weight: 300;
     line-height: 26px;
     color: var(--primarySoftBlue);
+    margin: 0;
 }
 .container {
     margin: 2rem;
@@ -141,10 +145,27 @@ p {
         padding: 115px;
     }
     .nft-price {
-        color: var(--primaryCyan);
         font-size: 15px;
     }
     .nft-time {
         font-size: 15px;
     }
+    .divider {
+        margin-bottom: 0px;
+    }
+    .card-footer {
+        font-size: 15px;
+    }
+}
+.attribution {
+    color: var(--white);
+    font-family: var(--fontOutfit);
+    font-size: 12px;
+}
+.attribution a {
+    text-decoration: none;
+    color: var(--fontOutfit);
+}
+.attribution a:hover {
+    color: var(--primaryCyan);
 }
