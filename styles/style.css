@@ -41,6 +41,9 @@ p {
     line-height: 26px;
     color: var(--primarySoftBlue);
 }
+.container {
+    margin: 2rem;
+}
 .card {
     width: 350px;
     height: 596px;
@@ -73,7 +76,6 @@ p {
 }
 .info-pub {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
@@ -125,4 +127,24 @@ p {
     border-radius: 50%;
     border: 1px solid var(--white);
     margin-right: 16px;
+}
+@media (max-width: 375px) {
+    .card {
+        width: 327px;
+        height: 543px;
+    }
+    .nft-preview {
+        width: 278px;
+        height: 278px;
+    }
+    .nft-preview svg {
+        padding: 115px;
+    }
+    .nft-price {
+        color: var(--primaryCyan);
+        font-size: 15px;
+    }
+    .nft-time {
+        font-size: 15px;
+    }
 }
